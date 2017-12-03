@@ -1,0 +1,7 @@
+difference between is null and euqla:=
+https://stackoverflow.com/questions/9581745/sql-is-null-and-null
+The reasoning is that a null means "unknown", so the result of any comparison to a null is also "unknown".
+So you'll get no hit on rows by coding where my_column = null.
+
+SQL provides the special syntax for testing if a column is null, 
+via is null and is not null, which is a special condition to test for a null (or not a null).
