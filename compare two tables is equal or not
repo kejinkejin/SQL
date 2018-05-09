@@ -1,0 +1,9 @@
+select Cause, Rate  
+ from (  
+ select Cause, Rate from A1  
+ union all  
+ select Cause, Rate from A2)  
+ group by Cause, Rate   
+having count(*) < 2  
+
+if the result is null, then the result is null.
